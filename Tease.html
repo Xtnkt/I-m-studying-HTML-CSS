@@ -1,0 +1,14 @@
+<script>
+    let manyBodyParts = ["голова", "нога", "попа", "рука"];
+    let manyAnimalsBodyParts = ["хвост", "хобот", "лапа", "морда"];
+    let manyAdjective = ["красивая", "толстая", "тонкая", "мускулистая"];
+    let manyAnimals = ["слона", "собаки ", "кошки", "крысы"];
+
+        let randomBodyPart = manyBodyParts[ Math.floor( Math.random() * manyBodyParts.length ) ];
+        let randomAnimalBodyPart = manyAnimalsBodyParts[ Math.floor( Math.random() * manyAnimalsBodyParts.length ) ];
+        let randomAdjective = manyAdjective[ Math.floor( Math.random() * manyAdjective.length ) ];
+        let randomAnimal = manyAnimals[ Math.floor( Math.random() * manyAnimals.length ) ];
+
+    let randomInsult = [ "У тебя", randomBodyPart, "еще более", randomAdjective, ", чем", randomAnimalBodyPart, "у", randomAnimal ].join(" ");
+    alert(randomInsult);
+</script>
